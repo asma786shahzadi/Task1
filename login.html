@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0; font-family: 'Poppins', sans-serif; background-color: #f0f4f8; display: flex; justify-content: center; align-items: center; height: 100vh;">
+
+    <div class="container" style="background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); width: 400px;">
+        <h2 style="text-align: center; color: #333; margin-bottom: 20px;">Login to Your Account</h2>
+
+        <form action="dashboard.html" method="POST" style="display: flex; flex-direction: column;">
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="username" style="color: #666; font-weight: 600;">Username or Email</label>
+                <input type="text" id="username" name="username" required style="padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 5px; font-size: 14px;">
+            </div>
+            <div class="form-group" style="margin-bottom: 20px;">
+                <label for="password" style="color: #666; font-weight: 600;">Password</label>
+                <input type="password" id="password" name="password" required style="padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 5px; font-size: 14px;">
+            </div>
+            <button type="submit" class="btn-login" style="background-color: #007bff; color: white; border: none; padding: 12px; border-radius: 5px; font-size: 16px; cursor: pointer; font-weight: 600;">Login</button>
+        </form>
+
+        <div class="forgot-password" style="text-align: right; margin-top: 15px;">
+            <a href="forgot-password.html" style="color: #007bff; text-decoration: none; font-size: 14px;">Forgot password?</a>
+        </div>
+
+        <div class="social-login" style="margin-top: 30px; text-align: center;">
+            <p style="color: #666; margin-bottom: 20px;">Or login with:</p>
+            <div style="display: flex; justify-content: space-around;">
+                <a href="#" class="social-btn google-btn" style="display: inline-flex; align-items: center; background-color: #db4437; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; font-size: 14px; font-weight: 600;">
+                    <img src="google.png" alt="Google Login" style="width: 20px; height: 20px; margin-right: 10px;">
+                    Google
+                </a>
+                <a href="#" class="social-btn facebook-btn" style="display: inline-flex; align-items: center; background-color: #3b5998; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; font-size: 14px; font-weight: 600;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook Login" style="width: 20px; height: 20px; margin-right: 10px;">
+                    Facebook
+                </a>
+            </div>
+        </div>
+
+        <div class="signup-link" style="text-align: center; margin-top: 20px;">
+            <p style="color: #666;">Don't have an account? <a href="signup.html" style="color: #007bff; text-decoration: none;">Sign up here</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
