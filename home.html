@@ -8,7 +8,7 @@
 <body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
 
   <!-- Search Bar and Contact Info Header -->
-  <header class="top-header" style="display: flex; justify-content: space-between; background-color: #34495e; color: white; padding: 15px 30px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+  <header class="top-header" style="display: flex; justify-content: space-between; background-color: #c8ced3; color: white; padding: 15px 30px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
     <div class="search-bar">
       <input type="text" placeholder="Search" style="padding: 10px; border-radius: 20px; border: none; width: 200px; transition: background-color 0.3s;">
     </div>
@@ -17,89 +17,116 @@
     </div>
   </header>
 
-  <!-- Logo and Menu Header -->
-  <header class="main-header" style="display: flex; justify-content: space-between; align-items: center; background-color: #2980b9; color: white; padding: 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);">
+   <!-- Logo and Menu Header -->
+   <header style="display: flex; justify-content: space-between; align-items: center; background-color: #f5f8fa; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: sticky; top: 0; z-index: 1000;">
     <div class="logo">
-      <img src="logo.png" alt="Hazix Logo" style="height: 60px;"> <!-- Logo size adjusted -->
+      <img src="logo.png" alt="Hazix Logo" style="height: 100px;"> <!-- Logo size adjusted -->
     </div>
     <nav>
       <ul style="list-style: none; display: flex; margin: 0; padding: 0;">
-        <li style="margin-right: 30px;"><a href="home.html" style="color: white; text-decoration: none; transition: color 0.3s;">Home</a></li>
-        <li style="margin-right: 30px;"><a href="signup.html" style="color: white; text-decoration: none; transition: color 0.3s;">SignUp</a></li>
-        <li style="margin-right: 30px;"><a href="#" style="color: white; text-decoration: none; transition: color 0.3s;">Services</a></li>
-        <li style="margin-right: 30px;"><a href="#" style="color: white; text-decoration: none; transition: color 0.3s;">Portfolio</a></li>
-        <li style="margin-right: 30px;"><a href="#" style="color: white; text-decoration: none; transition: color 0.3s;">About</a></li>
-        <li style="margin-right: 30px;"><a href="#" style="color: white; text-decoration: none; transition: color 0.3s;">Blog</a></li>
-        <li style="margin-right: 30px;"><a href="#" style="color: white; text-decoration: none; transition: color 0.3s;">Contact</a></li>
-        <li><a href="#" style="color: white; text-decoration: none; background-color: #e74c3c; padding: 10px 20px; border-radius: 20px;">GET A QUOTE</a></li>
+        <li style="margin-right: 30px;">
+          <a href="home.html" style="color: rgb(10, 35, 223); text-decoration: none; font-weight: 500; transition: color 0.3s; font-size: 1em;">Home</a>
+        </li>
+        <li style="margin-right: 30px;">
+          <a href="signup.html" style="color: rgb(10, 35, 223); text-decoration: none; font-weight: 500; transition: color 0.3s; font-size: 1em;">Sign Up</a>
+        </li>
+        <li style="margin-right: 30px;">
+          <a href="services.html" style="color: rgb(10, 35, 223); text-decoration: none; font-weight: 500; transition: color 0.3s; font-size: 1em;">Services</a>
+        </li>
+        <li style="margin-right: 30px;">
+          <a href="porfolio.html" style="color: rgb(10, 35, 223); text-decoration: none; font-weight: 500; transition: color 0.3s; font-size: 1em;">Portfolio</a>
+        </li>
+        <li style="margin-right: 30px;">
+          <a href="about.html" style="color: rgb(10, 35, 223); text-decoration: none; font-weight: 500; transition: color 0.3s; font-size: 1em;">About</a>
+        </li>
+        <li style="margin-right: 30px;">
+          <a href="blog.html" style="color: rgb(10, 35, 223); text-decoration: none; font-weight: 500; transition: color 0.3s; font-size: 1em;">Blog</a>
+        </li>
+        <li style="margin-right: 30px;">
+          <a href="contact.html" style="color: rgb(10, 35, 223); text-decoration: none; font-weight: 500; transition: color 0.3s; font-size: 1em;">Contact</a>
+        </li>
+        <li>
+          <a href="quote.html" style="color: rgb(10, 35, 223); background-color: #a293d33d; padding: 10px 20px; border-radius: 30px; text-decoration: none; font-weight: bold; transition: background-color 0.3s;">GET A QUOTE</a>
+        </li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero" style="background-image: url('hero-bg.jpg'); background-size: cover; color: white; text-align: center; padding: 100px 20px; position: relative; opacity: 0.9; animation: fadeIn 2s;">
-    <div style="background-color: rgba(41, 128, 185, 0.7); padding: 20px; border-radius: 10px; display: inline-block;">
-      <h1 style="font-size: 3em; animation: fadeInText 2s;">Welcome to Hazix Solution</h1>
-      <p style="font-size: 1.5em;">Digital Marketing Agency</p>
-      <button style="padding: 15px 30px; background-color: #e74c3c; color: white; border: none; border-radius: 20px; cursor: pointer; font-size: 1em; transition: background-color 0.3s;">Sign Up Now</button>
+  <section style="background-image: url('background.png'); background-size: cover, contain; color: rgb(6, 29, 113); text-align: center; padding: 120px 20px; position: relative; background-position: center; background-attachment: fixed;">
+    <div style="background-color: rgba(227, 229, 230, 0.85); padding: 40px 20px; border-radius: 10px; display: inline-block;">
+      <h1 style="font-size: 3.5em; margin-bottom: 10px; animation: fadeInText 2s;">Welcome to Hazix Solution</h1>
+      <p style="font-size: 1.5em; margin-bottom: 20px;">Digital Marketing Agency</p>
+      <button style="padding: 15px 30px; background-color: #420df03d; color: white; border: none; border-radius: 30px; cursor: pointer; font-size: 1.2em; transition: background-color 0.3s;">Sign Up Now</button>
     </div>
   </section>
+ <!-- Vision Section -->
+ <section style="padding: 70px 20px; text-align: center; background-color: #f4f4f4;">
+  <h1 style="color: #2980b9; font-size: 2.5em; margin-bottom: 20px; opacity: 0; animation: fadeIn 2.5s forwards;">Our Vision</h1>
+  <p style="font-size: 1.2em; max-width: 800px; margin: 0 auto; color: #555; opacity: 0; animation: fadeIn 3s forwards;">To be the leading digital marketing agency that drives creativity, innovation, and provides unparalleled service to elevate brands globally.</p>
+</section>
 
-  <!-- Vision Section -->
-  <section class="vision" style="padding: 50px 20px; text-align: center; background-color: #f8f8f8;">
-    <h1 style="color: #2980b9;">Our Vision</h1>
-    <p>To be the leading digital marketing agency that drives creativity and innovation...</p>
-  </section>
+<!-- Mission Section -->
+<section style="padding: 70px 20px; text-align: center; background-color: #ffffff; box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.1);">
+  <h1 style="color: #2980b9; font-size: 2.5em; margin-bottom: 20px; opacity: 0; animation: fadeIn 2.5s forwards;">Our Mission</h1>
+  <p style="font-size: 1.2em; max-width: 800px; margin: 0 auto; color: #555; opacity: 0; animation: fadeIn 3s forwards;">Our mission is to craft unique and creative digital experiences that resonate with audiences, foster growth, and enhance brand presence through strategic marketing initiatives.</p>
+</section>
 
-  <!-- Mission Section -->
-  <section class="mission" style="padding: 50px 20px; text-align: center; background-color: #f8f8f8;">
-    <h1 style="color: #2980b9;">Our Mission</h1>
-    <p>Our mission is to craft unique and creative digital experiences...</p>
-  </section>
+<!-- Services Section -->
+<section class="services" style="padding: 50px 20px; text-align: center;">
+  <h2 style="color: #333; margin-bottom: 20px; opacity: 0; animation: fadeIn 1s forwards; animation-delay: 1s;">Our Services</h2>
+  <p style="color: #666; margin-bottom: 40px; opacity: 0; animation: fadeIn 1s forwards; animation-delay: 1s;">Get the best services for your business with our expert marketing agency.</p>
 
-  <!-- Services Section -->
-  <section class="services" style="padding: 50px 20px; text-align: center; background-color: #ffffff;">
-    <h2 style="color: #2980b9;">Our Services</h2>
-    <p>Get the best Services for your Business with our Expert Marketing Agency.</p>
+  <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto;">
+      <div class="service-card" style="background-color: white; border-radius: 10px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); padding: 20px; transition: transform 0.3s, box-shadow 0.3s; opacity: 0; animation: fadeIn 1s forwards; animation-delay: 3.5s;">
+          <img src="D:/Internships/Hazix Solution/Task1/digitalMarketing.jpg" alt="Digital Marketing" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+          <h3 style="color: #007bff; margin-bottom: 10px;">Digital Marketing</h3>
+          <p style="color: #666;">We provide tailored digital marketing strategies to help your brand reach the right audience and drive growth. From SEO to email campaigns, we cover all aspects of digital marketing to ensure your business thrives online.</p>
+      </div>
+      <div class="service-card" style="background-color: white; border-radius: 10px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); padding: 20px; transition: transform 0.3s, box-shadow 0.3s; opacity: 0; animation: fadeIn 1s forwards; animation-delay: 4.1s;">
+          <img src="D:/Internships/Hazix Solution/Task1/socialmedia.jpeg" alt="Social Media Marketing" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+          <h3 style="color: #007bff; margin-bottom: 10px;">Social Media Marketing</h3>
+          <p style="color: #666;">Our social media experts will boost your online presence by creating engaging content and running impactful campaigns. We tailor our strategies to each platform to maximize your reach and engagement.</p>
+      </div>
+      <div class="service-card" style="background-color: white; border-radius: 10px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); padding: 20px; transition: transform 0.3s, box-shadow 0.3s; opacity: 0; animation: fadeIn 1s forwards; animation-delay: 4.5s;">
+          <img src="D:/Internships/Hazix Solution/Task1/webdesign.jpg" alt="Website Design" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+          <h3 style="color: #007bff; margin-bottom: 10px;">Website Design</h3>
+          <p style="color: #666;">Create stunning, responsive websites that engage your visitors and represent your brand professionally. We focus on user experience and aesthetics to ensure your site converts visitors into customers.</p>
+      </div>
+      <div class="service-card" style="background-color: white; border-radius: 10px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); padding: 20px; transition: transform 0.3s, box-shadow 0.3s; opacity: 0; animation: fadeIn 1s forwards; animation-delay: 4.9s;">
+          <img src="D:/Internships/Hazix Solution/Task1/vedio.jpg" alt="Video Editing" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+          <h3 style="color: #007bff; margin-bottom: 10px;">Video Editing</h3>
+          <p style="color: #666;">Let us bring your ideas to life with high-quality video editing services tailored to your needs. Whether for advertisements, social media, or events, we craft videos that captivate and engage your audience.</p>
+      </div>
+      <div class="service-card" style="background-color: white; border-radius: 10px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); padding: 20px; transition: transform 0.3s, box-shadow 0.3s; opacity: 0; animation: fadeIn 1s forwards; animation-delay: 5.1s;">
+          <img src="D:/Internships/Hazix Solution/Task1/seo.jpeg" alt="Website SEO" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+          <h3 style="color: #007bff; margin-bottom: 10px;">Website SEO</h3>
+          <p style="color: #666;">Optimize your website for search engines with our SEO strategies that ensure better visibility and higher rankings. Our comprehensive approach includes keyword research, on-page optimization, and backlink building.</p>
+      </div>
+      <div class="service-card" style="background-color: white; border-radius: 10px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); padding: 20px; transition: transform 0.3s, box-shadow 0.3s; opacity: 0; animation: fadeIn 1s forwards; animation-delay: 5.6s;">
+          <img src="D:/Internships/Hazix Solution/Task1/graphic.jpeg" alt="Graphic Designing" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+          <h3 style="color: #007bff; margin-bottom: 10px;">Graphic Designing</h3>
+          <p style="color: #666;">Our creative team will design visually striking graphics that convey your brand’s message effectively. From logos to marketing materials, we create designs that leave a lasting impression.</p>
+      </div>
+      <div class="service-card" style="background-color: white; border-radius: 10px; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); padding: 20px; transition: transform 0.3s, box-shadow 0.3s; opacity: 0; animation: fadeIn 1s forwards; animation-delay: 6s;">
+          <img src="D:/Internships/Hazix Solution/Task1/content.jpg" alt="Content Writing" style="width: 100%; border-radius: 10px; margin-bottom: 15px;">
+          <h3 style="color: #007bff; margin-bottom: 10px;">Content Writing</h3>
+          <p style="color: #666;">We craft compelling content that speaks to your audience and enhances your brand's voice. Our writing services include blogs, articles, website content, and more, all tailored to your business needs.</p>
+      </div>
+  </div>
+</section>
 
-    <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
-      <div class="service-card" style="border: 1px solid #ddd; border-radius: 10px; padding: 15px; text-align: center; transition: transform 0.3s; animation: scaleUp 0.3s;">
-        <img src="digitalMarketing.jpg" alt="Digital Marketing" style="width: 100%; height: auto; border-radius: 10px;">
-        <h3>Digital Marketing</h3>
-        <p>We provide tailored digital marketing strategies to help your brand...</p>
-      </div>
-      <div class="service-card" style="border: 1px solid #ddd; border-radius: 10px; padding: 15px; text-align: center; transition: transform 0.3s; animation: scaleUp 0.3s;">
-        <img src="socialmedia.jpeg" alt="Social Media Marketing" style="width: 100%; height: auto; border-radius: 10px;">
-        <h3>Social Media Marketing</h3>
-        <p>Our social media experts will boost your online presence...</p>
-      </div>
-      <div class="service-card" style="border: 1px solid #ddd; border-radius: 10px; padding: 15px; text-align: center; transition: transform 0.3s; animation: scaleUp 0.3s;">
-        <img src="webdesign.jpg" alt="Website Design" style="width: 100%; height: auto; border-radius: 10px;">
-        <h3>Website Design</h3>
-        <p>Create stunning, responsive websites that engage your visitors...</p>
-      </div>
-      <div class="service-card" style="border: 1px solid #ddd; border-radius: 10px; padding: 15px; text-align: center; transition: transform 0.3s; animation: scaleUp 0.3s;">
-        <img src="vedio.jpg" alt="Video Editing" style="width: 100%; height: auto; border-radius: 10px;">
-        <h3>Video Editing</h3>
-        <p>Let us bring your ideas to life with high-quality video editing...</p>
-      </div>
-      <div class="service-card" style="border: 1px solid #ddd; border-radius: 10px; padding: 15px; text-align: center; transition: transform 0.3s; animation: scaleUp 0.3s;">
-        <img src="seo.jpeg" alt="Website SEO" style="width: 100%; height: auto; border-radius: 10px;">
-        <h3>Website SEO</h3>
-        <p>Optimize your website for search engines with our SEO strategies...</p>
-      </div>
-      <div class="service-card" style="border: 1px solid #ddd; border-radius: 10px; padding: 15px; text-align: center; transition: transform 0.3s; animation: scaleUp 0.3s;">
-        <img src="graphic.jpeg" alt="Graphic Designing" style="width: 100%; height: auto; border-radius: 10px;">
-        <h3>Graphic Designing</h3>
-        <p>Our creative team will design visually striking graphics...</p>
-      </div>
-      <div class="service-card" style="border: 1px solid #ddd; border-radius: 10px; padding: 15px; text-align: center; transition: transform 0.3s; animation: scaleUp 0.3s;">
-        <img src="content.jpg" alt="Content Writing" style="width: 100%; height: auto; border-radius: 10px;">
-        <h3>Content Writing</h3>
-        <p>We craft compelling content that speaks to your audience...</p>
-      </div>
-    </div>
-  </section>
+<!-- Keyframes for Animation -->
+<style>
+  @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+  }
+  @keyframes scaleUp {
+      0% { opacity: 0; transform: scale(0.9); }
+      100% { opacity: 1; transform: scale(1); }
+  }
+</style>
 
   <!-- Newsletter Section -->
   <section class="newsletter" style="background-color: #2980b9; padding: 50px 20px; text-align: center; color: white;">
@@ -107,7 +134,7 @@
     <form>
       <input type="text" placeholder="Your name" style="padding: 10px; border-radius: 4px; border: 1px solid #ddd; margin-right: 10px;">
       <input type="email" placeholder="Your email address" style="padding: 10px; border-radius: 4px; border: 1px solid #ddd; margin-right: 10px;">
-      <button type="submit" style="padding: 10px 20px; background-color: #e74c3c; color: white; border: none; border-radius: 20px; cursor: pointer;">SIGN UP</button>
+      <button type="submit" style="padding: 10px 20px; background-color: #0c0d7c; color: white; border: none; border-radius: 20px; cursor: pointer;">SIGN UP</button>
     </form>
   </section>
 

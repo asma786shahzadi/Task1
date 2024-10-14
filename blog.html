@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        /* Header Style */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #99abbc;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header img {
+            height: 60px;
+            width: auto;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-right: 25px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 1em;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        nav ul li a.quote-btn {
+            background-color: #420df03d;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav ul li a.quote-btn:hover {
+            background-color: #420df0;
+        }
+
+        /* Blog Section */
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section h2 {
+            color: #2980b9;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+
+        /* Blog Post */
+        article {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            transition: box-shadow 0.3s;
+        }
+        article:hover {
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+        }
+        article h3 {
+            color: #2980b9;
+            margin-top: 0;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        article p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        article a {
+            color: #2980b9;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        article a:hover {
+            color: #ffcc00;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+      <!-- Search Bar and Contact Info Header -->
+  <header class="top-header" style="display: flex; justify-content: space-between; background-color: #c8ced3; color: white; padding: 15px 30px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+    <div class="search-bar">
+      <input type="text" placeholder="Search" style="padding: 10px; border-radius: 20px; border: none; width: 200px; transition: background-color 0.3s;">
+    </div>
+    <div class="contact-info">
+      <p style="margin: 0; font-size: 14px;">+92 31444321638 | hazixsolution@gmail.com</p>
+    </div>
+  </header>
+
+   <!-- Logo and Menu Header -->
+   <header style="display: flex; justify-content: space-between; align-items: center; background-color: #f5f8fa; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: sticky; top: 0; z-index: 1000;">
+    <div class="logo">
+      <img src="logo.png" alt="Hazix Logo" style="height: 100px;"> <!-- Logo size adjusted -->
+    </div>
+    <nav>
+      <ul style="list-style: none; display: flex; margin: 0; padding: 0;">
+        <li style="margin-right: 30px;">
+          <a href="home.html" style="color: rgb(10, 35, 223); text-decoration: none; font-weight: 500; transition: color 0.3s; font-size: 1em;">Home</a>
+        </li>
+        <li style="margin-right: 30px;">
+          <a href="signup.html" style="color: rgb(10, 35, 223); text-decoration: none; font-weight: 500; transition: color 0.3s; font-size: 1em;">Sign Up</a>
+        </li>
+        <li style="margin-right: 30px;">
+          <a href="services.html" style="color: rgb(10, 35, 223); text-decoration: none; font-weight: 500; transition: color 0.3s; font-size: 1em;">Services</a>
+        </li>
+        <li style="margin-right: 30px;">
+          <a href="porfolio.html" style="color: rgb(10, 35, 223); text-decoration: none; font-weight: 500; transition: color 0.3s; font-size: 1em;">Portfolio</a>
+        </li>
+        <li style="margin-right: 30px;">
+          <a href="about.html" style="color: rgb(10, 35, 223); text-decoration: none; font-weight: 500; transition: color 0.3s; font-size: 1em;">About</a>
+        </li>
+        <li style="margin-right: 30px;">
+          <a href="blog.html" style="color: rgb(10, 35, 223); text-decoration: none; font-weight: 500; transition: color 0.3s; font-size: 1em;">Blog</a>
+        </li>
+        <li style="margin-right: 30px;">
+          <a href="contact.html" style="color: rgb(10, 35, 223); text-decoration: none; font-weight: 500; transition: color 0.3s; font-size: 1em;">Contact</a>
+        </li>
+        <li>
+          <a href="quote.html" style="color: rgb(10, 35, 223); background-color: #a293d33d; padding: 10px 20px; border-radius: 30px; text-decoration: none; font-weight: bold; transition: background-color 0.3s;">GET A QUOTE</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <!-- Blog Main Section -->
+    <section>
+        <h2>Latest Articles</h2>
+
+        <!-- Blog Post 1 -->
+        <article>
+            <h3>How to Boost Your Brand with Social Media Marketing</h3>
+            <p>Published on <span style="color: #2980b9;">October 14, 2024</span></p>
+            <p>In today's digital landscape, social media marketing plays a critical role in the growth of your business. Whether you're looking to expand your reach, engage with your audience, or improve brand visibility, leveraging platforms like Instagram, Facebook, and LinkedIn is essential for success...</p>
+            <a href="#">Read more...</a>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article>
+            <h3>The Power of Graphic Design for Your Business</h3>
+            <p>Published on <span style="color: #2980b9;">October 10, 2024</span></p>
+            <p>Graphic design is much more than just making things look good; it’s about conveying your brand’s message in a powerful way. A well-designed logo, website, or marketing material can create trust, enhance engagement, and boost conversion rates...</p>
+            <a href="#">Read more...</a>
+        </article>
+
+        <!-- Blog Post 3 -->
+        <article>
+            <h3>Website Design Tips for a Better User Experience</h3>
+            <p>Published on <span style="color: #2980b9;">October 5, 2024</span></p>
+            <p>Creating a user-friendly website is critical for keeping visitors engaged and reducing bounce rates. From simple navigation to clear calls-to-action, there are several design principles that ensure your website provides an excellent user experience...</p>
+            <a href="#">Read more...</a>
+        </article>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; Hazix Solution. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
